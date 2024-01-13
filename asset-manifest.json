@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/packpal/static/css/main.708779c1.css",
+    "main.css": "/packpal/static/css/main.6a8a66c7.css",
     "main.js": "/packpal/static/js/main.2b525ac9.js",
     "index.html": "/packpal/index.html",
-    "main.708779c1.css.map": "/packpal/static/css/main.708779c1.css.map",
+    "main.6a8a66c7.css.map": "/packpal/static/css/main.6a8a66c7.css.map",
     "main.2b525ac9.js.map": "/packpal/static/js/main.2b525ac9.js.map"
   },
   "entrypoints": [
-    "static/css/main.708779c1.css",
+    "static/css/main.6a8a66c7.css",
     "static/js/main.2b525ac9.js"
   ]
 }
