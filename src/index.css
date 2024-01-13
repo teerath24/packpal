@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@500;700&display=swap");
 
+/* Mobile-first styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +13,7 @@ html {
 }
 
 body {
-  font-size: 2.4rem;
+  font-size: 1.6rem;
   font-family: sans-serif;
   color: #5a3e2b;
   font-family: "Quicksand";
@@ -29,26 +31,31 @@ h1 {
   text-align: center;
   background-color: #f4a226;
   font-family: "Monoton";
-  font-size: 8rem;
+  font-size: 6rem;
+  /* Adjust font size for smaller screens */
   text-transform: uppercase;
   font-weight: 400;
-  word-spacing: 30px;
-  letter-spacing: -5px;
-  padding: 2.4rem 0;
+  word-spacing: 20px;
+  letter-spacing: -3px;
+  padding: 1.6rem 0;
+  /* Adjust padding for smaller screens */
 }
 
 .add-form {
   background-color: #e5771f;
-  padding: 2.8rem 0;
+  padding: 1.6rem 0;
+  /* Adjust padding for smaller screens */
   display: flex;
+  flex-direction: column;
+  /* Stack items vertically on smaller screens */
   align-items: center;
-  justify-content: center;
-  gap: 0.8rem;
+  gap: 1rem;
+  /* Adjust gap for smaller screens */
 }
 
 h3 {
-  margin-right: 1.6rem;
-  font-size: 2.4rem;
+  margin-right: 0;
+  font-size: 1.6rem;
 }
 
 button,
@@ -58,10 +65,13 @@ input {
   color: #5a3e2b;
   font-family: inherit;
   border: none;
-  border-radius: 10rem;
-  padding: 1.2rem 3.2rem;
+  border-radius: 1rem;
+  /* Adjust border radius for smaller screens */
+  padding: 1rem 2rem;
+  /* Adjust padding for smaller screens */
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
+  /* Adjust font size for smaller screens */
   cursor: pointer;
 }
 
@@ -73,45 +83,48 @@ input {
 .list {
   background-color: #5a3e2b;
   color: #ffebb3;
-  padding: 4rem 0;
+  padding: 2rem 0;
+  /* Adjust padding for smaller screens */
 
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
-  gap: 3.2rem;
+  /* Stack items vertically on smaller screens */
+  gap: 1rem;
+  /* Adjust gap for smaller screens */
   align-items: center;
 }
 
 .actions button,
 .list select {
   text-transform: uppercase;
-  padding: 0.8rem 2.4rem;
-  font-size: 1.4rem;
+  padding: 0.8rem 1.6rem;
+  /* Adjust padding for smaller screens */
+  font-size: 1.2rem;
+  /* Adjust font size for smaller screens */
   font-weight: 700;
-  margin: 0 0.8rem;
+  margin: 0.5rem 0;
+  /* Adjust margin for smaller screens */
 }
 
 .list ul {
   list-style: none;
-  width: 80%;
-  /* overflow: scroll; */
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.2rem;
-  justify-content: center;
-  align-content: start;
+  width: 100%;
 }
 
 .list li {
   display: flex;
+  flex-direction: column;
+  /* Stack items vertically on smaller screens */
   align-items: center;
-  gap: 1.2rem;
+  gap: 0.8rem;
+  /* Adjust gap for smaller screens */
 }
 
 input[type="checkbox"] {
-  height: 2rem;
-  width: 2rem;
+  height: 1.6rem;
+  /* Adjust height for smaller screens */
+  width: 1.6rem;
+  /* Adjust width for smaller screens */
   accent-color: #e5771f;
 }
 
@@ -119,14 +132,37 @@ input[type="checkbox"] {
   cursor: pointer;
   background: none;
   border: none;
-  font-size: 1.8rem;
-  padding: 0.8rem;
-  transform: translateY(2px);
+  font-size: 1.4rem;
+  /* Adjust font size for smaller screens */
+  padding: 0.6rem;
+  /* Adjust padding for smaller screens */
+  transform: translateY(1px);
 }
 
 .stats {
   background-color: #76c7ad;
   text-align: center;
   font-weight: 700;
-  padding: 3.2rem 0;
+  padding: 1.6rem 0;
+  /* Adjust padding for smaller screens */
+}
+
+/* Media query for tablets and larger screens */
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 8rem;
+    word-spacing: 30px;
+    letter-spacing: -5px;
+    padding: 2.4rem 0;
+  }
+
+  .add-form {
+    flex-direction: row;
+    justify-content: center;
+    /* Display items side by side on larger screens */
+  }
+
+  h3 {
+    margin-right: 1.6rem;
+  }
 }
