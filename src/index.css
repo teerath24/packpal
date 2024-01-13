@@ -113,9 +113,10 @@ input {
 
 .list li {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   /* Stack items vertically on smaller screens */
   align-items: center;
+  justify-content: center;
   gap: 0.8rem;
   /* Adjust gap for smaller screens */
 }
